@@ -11,12 +11,11 @@ html, body {
 }
 
 html {
-    background-color: white;
+    background-color: rgba(176, 137, 176, 0.5);
 }
 
 body {
     display: flex;
-    min-height: 100%;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -27,9 +26,10 @@ body {
     text-align: center;
     font-weight: 600;
     display: inline-block;
-    -webkit-transform:scale(2,1); /* Safari and Chrome */
-    transform:scale(2,1); /* W3C */
-    font-size: 15svh;
+    -webkit-transform:scale(2.5,1); /* Safari and Chrome */
+    transform:scale(2.5,1); /* W3C */
+    font-size: 10svh;
+    letter-spacing: -0.25svh;
 }
 
 #link-container{
@@ -40,5 +40,6 @@ body {
 .link{
     margin-right: 5svh;
     text-decoration: none;
-    color:black
+    color:black;
+    font-family: Playfair;
 }
