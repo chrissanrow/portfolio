@@ -26,6 +26,11 @@ body {
     margin-bottom: 5svh;
 }
 
+#back-arrow:hover{
+    transform: scale(1.75);
+    transition: all 0.2s ease-in-out;
+}
+
 #title{
     color: white;
     transform:scaleY(1.5);

@@ -29,6 +29,11 @@ body {
     margin-bottom: 5svh;
 }
 
+#back-arrow:hover{
+    transform: scale(1.75);
+    transition: all 0.2s ease-in-out;
+}
+
 .link{
     font-size: 4svh;
     text-decoration: none;
@@ -36,8 +41,18 @@ body {
     font-family: Playfair;
 }
 
+.link:hover{
+    opacity: 60%;
+    transition: all 0.5s ease-in-out;
+}
+
 #copy-button{
     margin-left: 1svh;
     height: 3svh;
     width: 3svh;
+}
+
+#copy-button:hover{
+    opacity: 60%;
+    transition: all 0.5s ease-in-out;
 }
