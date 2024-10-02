@@ -15,15 +15,15 @@ html {
 }
 
 body {
-    padding: 5svh;
+    padding: 5vh;
     display: flex;
     flex-direction: column;
 }
 
 #back-arrow{
-    height: 3svh;
-    width: 3svh;
-    margin-bottom: 5svh;
+    height: 3vh;
+    width: 3vh;
+    margin-bottom: 5vh;
 }
 
 #back-arrow:hover{
@@ -34,9 +34,8 @@ body {
 #title{
     color: white;
     transform:scaleY(1.5);
-    font-size: 10svh;
-    margin-bottom: 5svh;
-    transform:scaleY(1.5);
+    font-size: 10vh;
+    margin-bottom: 5vh;
 }
 
 #icon-container{
@@ -46,7 +45,7 @@ body {
 }
 
 .subheading{
-    font-size: 3svh;
+    font-size: 3vh;
     transform:scaleY(1.25);
     color: white;
 }
@@ -55,8 +54,8 @@ body {
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding-top: 3svh;
-    padding-bottom: 3svh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 }
 
 .project{
@@ -64,11 +63,11 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-right: 15svh;
+    padding-right: 15vh;
 }
 
 .project-image{
-    width: 40svh;
+    width: 40vh;
 }
 
 .project-image:hover {
@@ -78,7 +77,7 @@ body {
 
 .project-title{
     text-align: left;
-    font-size: 3svh;
+    font-size: 3vh;
     font-weight: 200;
     color: white;
 }

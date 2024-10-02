@@ -29,8 +29,8 @@ body {
     display: inline-block;
     -webkit-transform:scale(2.5,1); /* Safari and Chrome */
     transform:scale(2.5,1); /* W3C */
-    font-size: 10svh;
-    letter-spacing: -0.25svh;
+    font-size: 10vh;
+    letter-spacing: -0.25vh;
     color: white;
 }
 
@@ -40,11 +40,11 @@ body {
 }
 
 .link{
-    margin-right: 5svh;
+    margin-right: 5vh;
     text-decoration: none;
     color:rgb(255, 255, 255);
     font-family: Playfair;
-    font-size: 3.5svh;
+    font-size: 3.5vh;
 }
 
 .link:hover{
@@ -58,5 +58,5 @@ body {
     bottom:4px;
     right:4px;
     color: rgba(255, 255, 255, 0.5);
-    font-size: 2svh;
+    font-size: 2vh;
 }
