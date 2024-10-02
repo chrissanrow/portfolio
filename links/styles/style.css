@@ -23,25 +23,21 @@ body {
     
 }
 
-#name{
-    text-align: center;
-    font-weight: 600;
-    display: inline-block;
-    -webkit-transform:scale(2.5,1); /* Safari and Chrome */
-    transform:scale(2.5,1); /* W3C */
-    font-size: 10svh;
-    letter-spacing: -0.25svh;
-    color: white;
-}
-
-#link-container{
-    justify-content: space-around;
-    width: 50vw;
+#back-arrow{
+    height: 3svh;
+    width: 3svh;
+    margin-bottom: 5svh;
 }
 
 .link{
-    margin-right: 5svh;
+    font-size: 4svh;
     text-decoration: none;
     color:rgb(255, 255, 255);
     font-family: Playfair;
+}
+
+#copy-button{
+    margin-left: 1svh;
+    height: 3svh;
+    width: 3svh;
 }
