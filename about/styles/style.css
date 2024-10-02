@@ -40,19 +40,22 @@ body {
 }
 
 #profile-picture{
-    width: 20svw;
+    width: 20vw;
+    transform:scaleY(1.25);
 }
 
 #name{
     color: white;
     font-family: Playfair;
-    font-size: 6vh;
-    transform:scaleY(1.5);
-    margin-bottom: 1.5vh;
+    font-size: 4vh;
+    transform:scaleY(3);
+    margin-left: 1.5vh;
+    margin-right: 1.5vh;
 }
 
 .description{
     color: white;
     font-family: Playfair;
     font-size: 4vh;
+    line-height: 7vh;
 }
