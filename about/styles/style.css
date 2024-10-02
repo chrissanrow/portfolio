@@ -47,7 +47,7 @@ body {
 #name{
     color: white;
     font-family: Playfair;
-    font-size: 4vh;
+    font-size: 5vh;
     transform:scaleY(3);
     margin-left: 1.5vh;
     margin-right: 1.5vh;
@@ -58,4 +58,13 @@ body {
     font-family: Playfair;
     font-size: 4vh;
     line-height: 7vh;
+}
+
+#tag{
+    position: fixed;
+    right:2px;
+    bottom:2px;
+    color: white;
+    font-weight: 100;
+    font-size: 2vh;
 }

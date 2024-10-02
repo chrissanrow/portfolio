@@ -96,3 +96,104 @@ body {
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.05);
 }
+
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.3s;
+}
+
+.overlay h{
+    color:white;
+}
+
+.overlay .closebtn {
+    color:white;
+    position: absolute;
+    top: 0.5vh;
+    right: 3vh;
+    font-size: 5vh;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.overlay .closebtn:hover{
+    transform: scale(1.75);
+    transition: all 0.2s ease-in-out;
+}
+
+.overlay-content {
+    position: relative;
+    width: 100%; /* 100% width */
+    top: 5%;
+    margin-top: 5vh;
+}
+
+.overlay-content h1{
+    padding: 1vh;
+    font-size: 5vh;
+    transform:scaleY(2);
+    color: white;
+    display: block; /* Display block instead of inline */
+    margin-bottom: 1vh;
+}
+
+.overlay-content h2{
+    padding: 1vh;
+    font-size: 4vh;
+    transform:scaleY(2);
+    color: white;
+    display: block; /* Display block instead of inline */
+    margin-bottom: 1vh;
+}
+
+.overlay-content p{
+    padding: 1vh;
+    padding-right: 10vh;
+    font-size: 4vh;
+    font-weight: 100;
+    color: white;
+    font-family: Playfair;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+.overlay-content a{
+    padding: 1vh;
+    font-size: 4vh;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+.overlay-content a:hover{
+    opacity: 60%;
+    transition: all 0.5s ease-in-out;
+}
+
+.overlay-content .gallery{
+    display: flex;
+    flex-direction: row;
+    padding: 1vh;
+    align-items: baseline;
+    margin-top: 5vh;
+}
+
+.overlay-content .gallery img{
+    height: 50vh;
+    margin-right: 5vh;
+}
+
+.overlay-content .gallery h3{
+    color: white;
+    font-size: 3vh;
+}

@@ -27,15 +27,13 @@
     <p class="subheading">CURRENT</p>
     <div class="project-container">
 
-        <div class="project">
-            <a href = "https://chrissanrow.github.io/SEAing-Queer/home/" style="text-decoration: none; color:black;"">
-                <div class="info-container">
-                    <img class="project-image" src="assets/seaingqueer-thumb.png">
-                    <div class="title-container">
-                        <p class="project-title">SEAING QUEER</p>
-                    </div>
+        <div class="project" id="seaqueer" onclick="openPopup(this)">
+            <div class="info-container">
+                <img class="project-image" src="assets/seaingqueer-thumb.png">
+                <div class="title-container">
+                    <p class="project-title">SEAING QUEER</p>
                 </div>
-            </a>
+            </div>
         </div>
 
     </div>
@@ -43,50 +41,224 @@
     <p class="subheading">PAST</p>
     <div class="project-container">
 
-        <div class="project">
-            <a href = "https://github.com/sunnypwang/SC22-BatchA-Synthetic-Codes-Empathetic-Bot" style="text-decoration: none; color:black;"">
-                <div class="info-container">
-                    <img class="project-image" src="assets/jaice-thumb.png">
-                    <div class="title-container">
-                        <p class="project-title">JAICE</p>
-                    </div>
+        <div class="project" id="jaice" onclick="openPopup(this)">
+            <div class="info-container">
+                <img class="project-image" src="assets/jaice-thumb.png">
+                <div class="title-container">
+                    <p class="project-title">JAICE</p>
                 </div>
-            </a>
+            </div>
         </div>
 
-        <div class="project">
-            <a href = "https://github.com/organization-x/ai-on-thumbs" style="text-decoration: none; color:black;"">
-                <div class="info-container">
-                    <img class="project-image" src="assets/aiot-thumb.png">
-                    <div class="title-container">
-                        <p class="project-title">AI ON THUMBS</p>
-                    </div>
+        <div class="project" id="aiot" onclick="openPopup(this)">
+            <div class="info-container">
+                <img class="project-image" src="assets/aiot-thumb.png">
+                <div class="title-container">
+                    <p class="project-title">AI ON THUMBS</p>
                 </div>
-            </a>
+            </div>
         </div>
 
-        <div class="project">
-            <a href = "https://github.com/TheGamemaker-dev/Ardens-Signal" style="text-decoration: none; color:black;"">
-                <div class="info-container">
-                    <img class="project-image" src="assets/ardenssignal-thumb.png">
-                    <div class="title-container">
-                        <p class="project-title">ARDEN'S SIGNAL</p>
-                    </div>
+        <div class="project" id="ardens" onclick="openPopup(this)">
+            <div class="info-container">
+                <img class="project-image" src="assets/ardenssignal-thumb.png">
+                <div class="title-container">
+                    <p class="project-title">ARDEN'S SIGNAL</p>
                 </div>
-            </a>
+            </div>
         </div>
 
-        <div class="project">
-            <a href = "https://github.com/TheGamemaker-dev/Death-Is-Just-The-Beginning" style="text-decoration: none; color:black;"">
-                <div class="info-container">
-                    <img class="project-image" src="assets/outofbody-thumb.png">
-                    <div class="title-container">
-                        <p class="project-title">OUT OF BODY</p>
-                    </div>
+        <div class="project" id="oob" onclick="openPopup(this)">
+            <div class="info-container">
+                <img class="project-image" src="assets/outofbody-thumb.png">
+                <div class="title-container">
+                    <p class="project-title">OUT OF BODY</p>
                 </div>
-            </a>
+            </div>
         </div>
-
     </div>
+
+
+    <!-- PROJECT-SPECIFIC POPUPS -->
+
+    <div class="overlay" id="overlay-seaqueer">
+        <a href="javascript:void(0)" class="closebtn" id="btn-seaqueer" onclick="closePopup(this)">&times;</a>
+        <div class="overlay-content">
+            <h1 style="margin-bottom: 1vh;">SEAING QUEER</h1>
+            <p>SEAing Queer is a mapping project which aims to share the unique experiences of Southeast Asian LGBTQ+ UCLA students, through voluntary survey data.
+                I worked on this project along with my partner Kienna for ASIAAM191A. In order to implement the goals we came up with together, I utilized largely open source
+                technologies.
+                <br><br>
+                HTML, CSS, JS: Framework used to design and script the webpage MapLibreGL: Used to generate map based on JSON data, along with markers and popups. MapTiler: Used for API Key to produce map interface. PapaParse: Used to parse data from Google Sheets into a JSON format for further JavaScript processing.
+                <br><br>
+                This project is still ongoing, as we hope to refine the design of the webpage and more importantly, engage more of the Queer Southeast Asian community on campus and work
+                with campus organizations to give back our findings to empower these communities.
+                <br><br>
+            </p>
+            <a href="https://chrissanrow.github.io/SEAing-Queer/home/" target="_blank">WEBSITE</a>
+            <a href="https://github.com/chrissanrow/SEAing-Queer" target="_blank">GITHUB</a>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay-jaice">
+        <a href="javascript:void(0)" class="closebtn" id="btn-jaice" onclick="closePopup(this)">&times;</a>
+        <div class="overlay-content">
+            <h1 style="margin-bottom: 1vh;">JAICE</h1>
+            <p>JAICE is a web-based empathetic response generator/"therapy" chatbot I worked on for AI Camp's summer session.
+                 My team and I wanted to create something that resonated with some of our personal struggles and that
+                 many people would be able to utilize and interact with.
+                <br><br>
+                As the lead backend developer, I focused on cleaning our dataset of
+                ~25,000 emotionally driven conversations using pandas, 
+                fine tuning a pre-trained 124M version of GPT-2 with aitextgen, 
+                and linking the model to our user-facing website.
+                <br><br>
+                The project took around 4 weeks and was successfully completed with the help
+                of my team members and my mentor (listed on the Github page).
+                <br><br>
+            </p>
+            <a href="https://github.com/sunnypwang/SC22-BatchA-Synthetic-Codes-Empathetic-Bot" target="_blank">GITHUB</a>
+            <a href="https://youtu.be/nv4l_6MDe6E?si=DXMef1TEjuTke7Hd" target="_blank">LIVE DEMO</a>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay-aiot">
+        <a href="javascript:void(0)" class="closebtn" id="btn-aiot" onclick="closePopup(this)">&times;</a>
+        <div class="overlay-content">
+            <h1>AI ON THUMBS</h1>
+            <p>
+                As a part of the AI Camp's incubator program, I worked on a team of 5 as both a UI/UX Designer, 
+                and front-end engineer to revamp and add new lessons to their AI on Thumbs app. The app serves 
+                to make learning about machine learning and artificial intelligence more accessible, addressing 
+                the issue of unequal access to education and costly nature of learning materials.
+                <br><br>
+                The program consisted of weekly meetings presenting progress to the rest of the company, live 
+                team collaboration, and utilization of sprint boards and other industry standard methodologies. 
+                With my teammate, I used Figma to design a new quiz functionality for the app, a new landing page, and 2 new
+                lessons on neural networks. Then, using React Native, Expo, and Android Studio, I fully implemented 
+                the quiz functionality along with some of the lesson pages.
+                <br><br>
+            </p>
+            <a href="https://github.com/organization-x/ai-on-thumbs" target="_blank">GITHUB</a>
+            <a href="https://www.figma.com/proto/jxWSRRWrMA2gkCBU7yF8xE/AIOT-Figma-backup?node-id=192-75&t=inFUq5ZxlSwPxCx0-1&starting-point-node-id=113%3A50" target="_blank">FIGMA</a>
+            <h2 style="margin-top: 5vh">GALLERY</h2>
+            <div class="gallery">
+                <h3 style="margin-right: 1vh;">BEFORE: </h3>
+                <img src="assets/before1.jpg">
+                <img src="assets/before2.jpg">
+                <img src="assets/before3.jpg">
+                <h3 style="margin-right: 1vh;">AFTER: </h3>
+                <video height="290vh" autoplay>
+                    <source src="assets/demo.mp4" type="video/mp4">
+                    Your browser does not support videoplay.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay-jaice">
+        <a href="javascript:void(0)" class="closebtn" id="btn-jaice" onclick="closePopup(this)">&times;</a>
+        <div class="overlay-content">
+            <h1 style="margin-bottom: 1vh;">JAICE</h1>
+            <p>JAICE is a web-based empathetic response generator/"therapy" chatbot I worked on for AI Camp's summer session.
+                 My team and I wanted to create something that resonated with some of our personal struggles and that
+                 many people would be able to utilize and interact with.
+                <br><br>
+                As the lead backend developer, I focused on cleaning our dataset of
+                ~25,000 emotionally driven conversations using pandas, 
+                fine tuning a pre-trained 124M version of GPT-2 with aitextgen, 
+                and linking the model to our user-facing website.
+                <br><br>
+                The project took around 4 weeks and was successfully completed with the help
+                of my team members and my mentor (listed on the Github page).
+                <br><br>
+            </p>
+            <a href="https://github.com/sunnypwang/SC22-BatchA-Synthetic-Codes-Empathetic-Bot" target="_blank">GITHUB</a>
+            <a href="https://youtu.be/nv4l_6MDe6E?si=DXMef1TEjuTke7Hd" target="_blank">LIVE DEMO</a>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay-aiot">
+        <a href="javascript:void(0)" class="closebtn" id="btn-aiot" onclick="closePopup(this)">&times;</a>
+        <div class="overlay-content">
+            <h1>AI ON THUMBS</h1>
+            <p>
+                As a part of the AI Camp's incubator program, I worked on a team of 5 as both a UI/UX Designer, 
+                and front-end engineer to revamp and add new lessons to their AI on Thumbs app. The app serves 
+                to make learning about machine learning and artificial intelligence more accessible, addressing 
+                the issue of unequal access to education and costly nature of learning materials.
+                <br><br>
+                The program consisted of weekly meetings presenting progress to the rest of the company, live 
+                team collaboration, and utilization of sprint boards and other industry standard methodologies. 
+                With my teammate, I used Figma to design a new quiz functionality for the app, a new landing page, and 2 new
+                lessons on neural networks. Then, using React Native, Expo, and Android Studio, I fully implemented 
+                the quiz functionality along with some of the lesson pages.
+                <br><br>
+            </p>
+            <a href="https://github.com/organization-x/ai-on-thumbs" target="_blank">GITHUB</a>
+            <a href="https://www.figma.com/proto/jxWSRRWrMA2gkCBU7yF8xE/AIOT-Figma-backup?node-id=192-75&t=inFUq5ZxlSwPxCx0-1&starting-point-node-id=113%3A50" target="_blank">FIGMA</a>
+            <h2 style="margin-top: 5vh">GALLERY</h2>
+            <div class="gallery">
+                <h3 style="margin-right: 1vh;">BEFORE: </h3>
+                <img src="assets/before1.jpg">
+                <img src="assets/before2.jpg">
+                <img src="assets/before3.jpg">
+                <h3 style="margin-right: 1vh;">AFTER: </h3>
+                <video height="290vh" autoplay>
+                    <source src="assets/demo.mp4" type="video/mp4">
+                    Your browser does not support videoplay.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay-ardens">
+        <a href="javascript:void(0)" class="closebtn" id="btn-ardens" onclick="closePopup(this)">&times;</a>
+        <div class="overlay-content">
+            <h1>ARDEN'S SIGNAL</h1>
+            <p>
+                For the 2021 Github gameoff (with the theme of "bug"), I worked with some friends (artists and devs alike) to create 
+                an RPG taking place on a retro-esque desktop environment. Users play through the storyline by 
+                browsing the computer and talking to their friend, Arden, who sends them a mysterious AI...
+                <br><br>
+                For this project, I largely worked on the concepts and implementing the dialogue utilizing an interpreter that 
+                a fellow dev designed and working in Unity with C#.
+                <br><br>
+            </p>
+            <a href="https://github.com/TheGamemaker-dev/Ardens-Signal" target="_blank">GITHUB</a>
+            <h2 style="margin-top: 5vh">GALLERY</h2>
+            <div class="gallery">
+                <img src="assets/ardens1.png" style="height:30vh">
+                <img src="assets/ardens2.png" style="height:30vh">
+                <img src="assets/ardens3.png" style="height:30vh">
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay-oob">
+        <a href="javascript:void(0)" class="closebtn" id="btn-oob" onclick="closePopup(this)">&times;</a>
+        <div class="overlay-content">
+            <h1>OUT OF BODY</h1>
+            <p>
+                For the 2022 TheGameDev.tv gameoff (with the theme of "Death is Just the Beginning"), 
+                I worked with my friend to create a underworld-setting platformer with the quirk of being able 
+                to float through structures with a ghost mode.
+                <br><br>
+                For this project, I designed most of the assets, the levels, and wrote some of the level logic using 
+                C# and Unity.
+                <br><br>
+            </p>
+            <a href="https://thegamemaker-dev.itch.io/out-of-body" target="_blank">DOWNLOAD</a>
+            <a href="https://github.com/TheGamemaker-dev/Death-Is-Just-The-Beginning" target="_blank">GITHUB</a>
+            <!--TODO: GET SCREENSHOTS FOR GALLERY-->
+            <!--
+            <h2 style="margin-top: 5vh">GALLERY</h2>
+            <div class="gallery">
+            </div>
+            -->
+        </div>
+    </div>
+
+    <script src="js/init.js"></script>
 </body>
 </html>
