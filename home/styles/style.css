@@ -46,3 +46,12 @@ body {
     font-family: Playfair;
     font-size: 3.5svh;
 }
+
+#music-credit{
+    display: none;
+    position:absolute;
+    bottom:4px;
+    right:4px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2svh;
+}
