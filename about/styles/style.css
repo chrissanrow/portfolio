@@ -40,8 +40,7 @@ body {
 }
 
 #profile-picture{
-    width: 20vw;
-    transform:scaleY(1.25);
+    width: 15vw;
 }
 
 #name{
@@ -49,7 +48,7 @@ body {
     font-family: Playfair;
     font-size: 5vh;
     transform:scaleY(3);
-    margin-left: 1.5vh;
+    margin-left: 3vh;
     margin-right: 1.5vh;
 }
 
@@ -58,6 +57,7 @@ body {
     font-family: Playfair;
     font-size: 4vh;
     line-height: 7vh;
+    text-align: justify;
 }
 
 #tag{
