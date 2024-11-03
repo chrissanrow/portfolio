@@ -87,6 +87,24 @@
             </div>
         </div>
 
+        <div class="project" id="daw" onclick="openPopup(this)">
+            <div class="info-container">
+                <img class="project-image" src="assets/daw-thumb.png">
+                <div class="title-container">
+                    <p class="project-title">DAW</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project" id="aia" onclick="openPopup(this)">
+            <div class="info-container">
+                <img class="project-image" src="assets/aia-thumb.png">
+                <div class="title-container">
+                    <p class="project-title">AIA</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- PROJECT-SPECIFIC POPUPS -->
@@ -176,7 +194,7 @@
             <h1>OUT OF BODY</h1>
             <p>
                 For the 2022 TheGameDev.tv gameoff (with the theme of "Death is Just the Beginning"), 
-                I worked with my friend to create a underworld-setting platformer with the quirk of being able 
+                I worked with my friend to create an underworld-setting platformer with the quirk of being able 
                 to float through structures with a ghost mode.
                 <br><br>
                 For this project, I designed most of the assets, the levels, and wrote some of the level logic using 
@@ -220,6 +238,25 @@
             <p>This webpage was made using purely HTML, CSS, and JS and is hosted through Github pages.
             </p>
             <a href="https://github.com/chrissanrow/portfolio" target="_blank">GITHUB</a>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay-daw">
+        <a href="javascript:void(0)" class="closebtn" id="btn-daw" onclick="closePopup(this)">&times;</a>
+        <div class="overlay-content">
+            <h1 style="margin-bottom: 1vh;">DAW</h1>
+            <p>In progress: redesigning and engineering DAW.digital using HTML, CSS, JS
+            </p>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay-aia">
+        <a href="javascript:void(0)" class="closebtn" id="btn-aia" onclick="closePopup(this)">&times;</a>
+        <div class="overlay-content">
+            <h1 style="margin-bottom: 1vh;">AIA</h1>
+            <p>In progress: reinstating UCLA AIA's webpage through purchasing hosting services, domain management,
+                and redesigning/implementing using Webflow.
+            </p>
         </div>
     </div>
 
