@@ -8,6 +8,7 @@
 
 html, body {
     height: 100%;
+    width: 100%;
 }
 
 html {
@@ -15,12 +16,12 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 
 #name{
@@ -29,22 +30,22 @@ body {
     display: inline-block;
     -webkit-transform:scale(2.5,1); /* Safari and Chrome */
     transform:scale(2.5,1); /* W3C */
-    font-size: 10vh;
+    font-size: 1em;
     letter-spacing: -0.25vh;
     color: white;
 }
 
 #link-container{
-    justify-content: space-around;
-    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .link{
-    margin-right: 5vh;
     text-decoration: none;
     color:rgb(255, 255, 255);
     font-family: Playfair;
-    font-size: 3.5vh;
+    font-size: 0.5em;
 }
 
 .link:hover{
@@ -58,5 +59,61 @@ body {
     bottom:4px;
     right:4px;
     color: rgba(255, 255, 255, 0.5);
-    font-size: 2vh;
+    font-size: 0.5em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #name{
+        font-size: 1.25em;
+    }
+    #link-container{
+        flex-direction: column;
+    }
+    .link{
+        margin: 0.5em;
+        font-size: 1em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #name{
+        font-size: 1.5em;
+    }
+    #link-container{
+        flex-direction: row;
+    }
+    .link{
+        margin: 0.5em;
+        font-size: 1em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #name{
+        font-size: 2em;
+    }
+    #link-container{
+        flex-direction: row;
+    }
+    .link{
+        margin: 0.5em;
+        font-size: 1em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #name{
+        font-size: 3em;
+    }
+    #link-container{
+        flex-direction: row;
+    }
+    .link{
+        margin: 0.5em;
+        font-size: 2em;
+    }
 }
