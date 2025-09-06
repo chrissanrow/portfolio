@@ -23,8 +23,6 @@
     </a>
     <p id="title">PROJECTS</p>
     
-    <!-- TODO: i wanna make the current and past tabs dropdown and have a circle appear next to whichever one is selected-->
-    
     <p class="subheading">PAST</p>
     <div class="project-container">
 
@@ -36,7 +34,6 @@
                 </div>
             </div>
         </div>
-
         
         <div class="project" id="jaice" onclick="openPopup(this)">
             <div class="info-container">
@@ -68,43 +65,7 @@
 
     <p class="subheading">CURRENT</p>
     <div class="project-container">
-
-        <div class="project" id="seaqueer" onclick="openPopup(this)">
-            <div class="info-container">
-                <img class="project-image" src="../assets/seaingqueer-thumb.png">
-                <div class="title-container">
-                    <p class="project-title">SEAING QUEER</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="project" id="personal" onclick="openPopup(this)">
-            <div class="info-container">
-                <img class="project-image" src="../assets/personal-thumb.png">
-                <div class="title-container">
-                    <p class="project-title">PORTFOLIO</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="project" id="daw" onclick="openPopup(this)">
-            <div class="info-container">
-                <img class="project-image" src="../assets/daw-thumb.png">
-                <div class="title-container">
-                    <p class="project-title">DAW</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="project" id="aia" onclick="openPopup(this)">
-            <div class="info-container">
-                <img class="project-image" src="../assets/aia-thumb.png">
-                <div class="title-container">
-                    <p class="project-title">AIA</p>
-                </div>
-            </div>
-        </div>
-
+        <p id="in-progress">UPDATING SOON....</p>
     </div>
 
     <!-- PROJECT-SPECIFIC POPUPS -->
@@ -209,54 +170,6 @@
             <div class="gallery">
             </div>
             -->
-        </div>
-    </div>
-
-    <div class="overlay" id="overlay-seaqueer">
-        <a href="javascript:void(0)" class="closebtn" id="btn-seaqueer" onclick="closePopup(this)">&times;</a>
-        <div class="overlay-content">
-            <h1 style="margin-bottom: 1vh;">SEAING QUEER</h1>
-            <p>SEAing Queer is a mapping project which aims to share the unique experiences of Southeast Asian LGBTQ+ UCLA students, through voluntary survey data.
-                I worked on this project along with my partner Kienna for ASIAAM191A. In order to implement the goals we came up with together, I utilized largely open source
-                technologies.
-                <br><br>
-                HTML, CSS, JS: Framework used to design and script the webpage MapLibreGL: Used to generate map based on JSON data, along with markers and popups. MapTiler: Used for API Key to produce map interface. PapaParse: Used to parse data from Google Sheets into a JSON format for further JavaScript processing.
-                <br><br>
-                This project is still ongoing, as we hope to refine the design of the webpage and more importantly, engage more of the Queer Southeast Asian community on campus and work
-                with campus organizations to give back our findings to empower these communities.
-                <br><br>
-            </p>
-            <a href="https://chrissanrow.github.io/SEAing-Queer/home/" target="_blank">WEBSITE</a>
-            <a href="https://github.com/chrissanrow/SEAing-Queer" target="_blank">GITHUB</a>
-        </div>
-    </div>
-
-    <div class="overlay" id="overlay-personal">
-        <a href="javascript:void(0)" class="closebtn" id="btn-personal" onclick="closePopup(this)">&times;</a>
-        <div class="overlay-content">
-            <h1 style="margin-bottom: 1vh;">PORTFOLIO</h1>
-            <p>This webpage was made using purely HTML, CSS, and JS and is hosted through Github pages.
-            </p>
-            <a href="https://github.com/chrissanrow/portfolio" target="_blank">GITHUB</a>
-        </div>
-    </div>
-
-    <div class="overlay" id="overlay-daw">
-        <a href="javascript:void(0)" class="closebtn" id="btn-daw" onclick="closePopup(this)">&times;</a>
-        <div class="overlay-content">
-            <h1 style="margin-bottom: 1vh;">DAW</h1>
-            <p>In progress: redesigning and engineering DAW.digital using HTML, CSS, JS
-            </p>
-        </div>
-    </div>
-
-    <div class="overlay" id="overlay-aia">
-        <a href="javascript:void(0)" class="closebtn" id="btn-aia" onclick="closePopup(this)">&times;</a>
-        <div class="overlay-content">
-            <h1 style="margin-bottom: 1vh;">AIA</h1>
-            <p>In progress: reinstating UCLA AIA's webpage through purchasing hosting services, domain management,
-                and redesigning/implementing using Webflow.
-            </p>
         </div>
     </div>
 

@@ -20,6 +20,14 @@ body {
     flex-direction: column;
 }
 
+#in-progress{
+    color: white;
+    font-size: 3vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-weight: 100;
+}
+
 #back-arrow{
     height: 3vh;
     width: 3vh;
