@@ -46,7 +46,7 @@ body {
     color: white;
     font-family: Playfair;
     font-size: 5vh;
-    transform:scaleY(3);
+    transform:scaleY(2);
     margin-left: 3vh;
     margin-right: 1.5vh;
 }

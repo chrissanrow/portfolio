@@ -23,8 +23,36 @@
     </a>
     <p id="title">PROJECTS</p>
     
+    <p class="subheading">CURRENT</p>
+    <div class="project-container">
+        <div class="project" id="melds" onclick="openPopup(this)">
+            <div class="info-container">
+                <img class="project-image" src="../assets/melds-thumb.png">
+                <div class="title-container">
+                    <p class="project-title">MELDSFIND</p>
+                </div>
+            </div>
+        </div>
+        <div class="project" id="ray" onclick="openPopup(this)">
+            <div class="info-container">
+                <img class="project-image" src="../assets/rt-thumb.png">
+                <div class="title-container">
+                    <p class="project-title">RAYTRACER</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <p class="subheading">PAST</p>
     <div class="project-container">
+        <div class="project" id="ww" onclick="openPopup(this)">
+            <div class="info-container">
+                <img class="project-image" src="../assets/ww-thumb.png">
+                <div class="title-container">
+                    <p class="project-title">WESTWOOD TOUR</p>
+                </div>
+            </div>
+        </div>
 
         <div class="project" id="aiot" onclick="openPopup(this)">
             <div class="info-container">
@@ -43,7 +71,9 @@
                 </div>
             </div>
         </div>
+    </div>
         
+    <div class="project-container">
         <div class="project" id="ardens" onclick="openPopup(this)">
             <div class="info-container">
                 <img class="project-image" src="../assets/ardenssignal-thumb.png">
@@ -63,12 +93,50 @@
         </div>
     </div>
 
-    <p class="subheading">CURRENT</p>
-    <div class="project-container">
-        <p id="in-progress">UPDATING SOON....</p>
+    <!-- PROJECT-SPECIFIC POPUPS -->
+
+    <div class="overlay" id="overlay-melds">
+        <a href="javascript:void(0)" class="closebtn" id="btn-melds" onclick="closePopup(this)">&times;</a>
+        <div class="overlay-content">
+            <h1>MELDSFIND</h1>
+            <p>Melds find is a cross-platform desktop application that provides you with potential win conditions based on your Mahjong tile set, detected through a video stream.
+            </p>
+            <a href="https://github.com/chrissanrow/MeldsFind" target="_blank">GITHUB</a>
+            <h2 style="margin-top: 5vh">GALLERY</h2>
+            <div class="gallery">
+                <h3 style="margin-right: 1vh;">MASK: </h3>
+                <img src="../assets/melds1.png">
+            </div>
+        </div>
     </div>
 
-    <!-- PROJECT-SPECIFIC POPUPS -->
+    <div class="overlay" id="overlay-ray">
+        <a href="javascript:void(0)" class="closebtn" id="btn-ray" onclick="closePopup(this)">&times;</a>
+        <div class="overlay-content">
+            <h1>RAYTRACER</h1>
+            <p> 3D Raytracer written in C++. Simulated diffuse, dielectric, and metal materials on 3D surfaces using raytracing techniques implemented in C++. Produced realistic 3D scenes utilizing geometric and graphical methods such as gamma correcting and antialiasing.
+            </p>
+            <a href="https://github.com/chrissanrow/Raytracing" target="_blank">GITHUB</a>
+            <h2 style="margin-top: 5vh">GALLERY</h2>
+            <div class="gallery">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay-ww">
+        <a href="javascript:void(0)" class="closebtn" id="btn-ww" onclick="closePopup(this)">&times;</a>
+        <div class="overlay-content">
+            <h1>Westwood Tour</h1>
+            <p>Generated console-based tours of the Westwood area with commentary and navigational instructions using C++. Accessed coordinates, geodata and points of interest for 20000+ streets in constant time through custom hashmap. Reduced compute and produced 50% shorter routes with custom stops through A* path-finding implementation.
+            </p>
+            <a href="https://github.com/chrissanrow/BruinTour" target="_blank">GITHUB</a>
+            <h2 style="margin-top: 5vh">GALLERY</h2>
+            <div class="gallery">
+                
+            </div>
+        </div>
+    </div>
 
     <div class="overlay" id="overlay-aiot">
         <a href="javascript:void(0)" class="closebtn" id="btn-aiot" onclick="closePopup(this)">&times;</a>
@@ -165,11 +233,11 @@
             <a href="https://thegamemaker-dev.itch.io/out-of-body" target="_blank">DOWNLOAD</a>
             <a href="https://github.com/TheGamemaker-dev/Death-Is-Just-The-Beginning" target="_blank">GITHUB</a>
             <!--TODO: GET SCREENSHOTS FOR GALLERY-->
-            <!--
             <h2 style="margin-top: 5vh">GALLERY</h2>
+                <img src="../assets/oob1.png" style="height:30vh">
+                <img src="../assets/oob2.png" style="height:30vh">
             <div class="gallery">
             </div>
-            -->
         </div>
     </div>
 
