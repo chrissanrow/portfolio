@@ -63,6 +63,17 @@
             </div>
         </div>
 
+        <div class="project" id="rv32" onclick="openPopup(this)">
+            <div class="info-container">
+                <img class="project-image" src="../assets/rv32-thumb.png">
+                <div class="title-container">
+                    <p class="project-title">RV32I CPU SIMULATOR</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="project-container">
         <div class="project" id="oob" onclick="openPopup(this)">
             <div class="info-container">
                 <img class="project-image" src="../assets/outofbody-thumb.png">
@@ -71,9 +82,7 @@
                 </div>
             </div>
         </div>
-    </div>
-        
-    <div class="project-container">
+
         <div class="project" id="ardens" onclick="openPopup(this)">
             <div class="info-container">
                 <img class="project-image" src="../assets/ardenssignal-thumb.png">
@@ -193,6 +202,22 @@
             <a href="https://youtu.be/nv4l_6MDe6E?si=DXMef1TEjuTke7Hd" target="_blank">LIVE DEMO</a>
             <div class="embed">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/nv4l_6MDe6E?si=DRZ_B2nQkhLVt-rY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay-rv32">
+        <a href="javascript:void(0)" class="closebtn" id="btn-rv32" onclick="closePopup(this)">&times;</a>
+        <div class="overlay-content">
+            <h1>RV32I CPU SIMULATOR</h1>
+            <p>This project is a C++ implementation and simulation of a single-cycle, in order CPU microarchitecture for various RISC-V32I instructions. In particular, I implemented C++ classes and APIs for datapath components such as the immediate generator, ALU, and register file. I also simulated execution of assembly code, parsing instructions and giving bytes to datapath/controller implementations. See the github README for more details on the design and interface of the application.
+            </p>
+            <a href="https://github.com/chrissanrow/RV32I-CPU-SIM" target="_blank">GITHUB</a>
+            <h2 style="margin-top: 5vh">GALLERY</h2>
+            <div class="gallery">
+                <h3 style="margin-right: 1vh;">DESIGN DIAGRAM: </h3>
+                <img src="../assets/design-diagram.jpeg">
+                <p style="font-size: x-small;">Design adapted from "David A. Patterson and John L. Hennessy. 2017. Computer Organization and Design RISC-V"</p>
             </div>
         </div>
     </div>
