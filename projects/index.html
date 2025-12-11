@@ -23,8 +23,15 @@
     </a>
     <p id="title">PROJECTS</p>
     
-    <p class="subheading">CURRENT</p>
     <div class="project-container">
+        <div class="project" id="synthslicer" onclick="openPopup(this)">
+            <div class="info-container">
+                <img class="project-image" src="../assets/synthslicer-thumb.png">
+                <div class="title-container">
+                    <p class="project-title">SYNTH SLICER</p>
+                </div>
+            </div>
+        </div>
         <div class="project" id="melds" onclick="openPopup(this)">
             <div class="info-container">
                 <img class="project-image" src="../assets/melds-thumb.png">
@@ -42,8 +49,7 @@
             </div>
         </div>
     </div>
-    
-    <p class="subheading">PAST</p>
+
     <div class="project-container">
         <div class="project" id="ww" onclick="openPopup(this)">
             <div class="info-container">
@@ -101,8 +107,28 @@
             </div>
         </div>
     </div>
-    
+
     <!-- PROJECT-SPECIFIC POPUPS -->
+
+    <div class="overlay" id="overlay-synthslicer">
+        <a href="javascript:void(0)" class="closebtn" id="btn-synthslicer" onclick="closePopup(this)">&times;</a>
+        <div class="overlay-content">
+            <h1>SYNTH SLICER</h1>
+            <p>Synth Slicer is a first-person, 3D rhythm game inspired by "Dance Dance Revolution" and other beat-based games like "Amplitude" or "Beat Saber." It utilizes Three.js and GLSL shaders for graphics and Meyda for waveform extraction and analysis.
+            <br><br>
+            Players navigate through a futuristic 3D environment, hitting notes in time with the music to score points.
+            <br><br>
+            The game uses procedural beatmap generation through digital signal processing and dynamic difficulty adjustment to allow players to create custom levels.
+            </p>
+            <a href="https://github.com/chrissanrow/SynthSlicer" target="_blank">GITHUB</a>
+            <h2 style="margin-top: 5vh">GALLERY</h2>
+            <div class="gallery">
+                <video height="380vh" autoplay controls>
+                    <source src="../assets/synthslicer-demo.mp4" type="video/mp4">
+                    Your browser does not support videoplay.
+            </div>
+        </div>
+    </div>
 
     <div class="overlay" id="overlay-melds">
         <a href="javascript:void(0)" class="closebtn" id="btn-melds" onclick="closePopup(this)">&times;</a>
