@@ -46,9 +46,9 @@ body {
     color: white;
     font-family: Playfair;
     font-size: 5vh;
-    transform:scaleY(2);
+    transform:scaleY(1.1);
     margin-left: 3vh;
-    margin-right: 1.5vh;
+    margin-right: 3vh;
 }
 
 .description{
